@@ -1,0 +1,77 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Neon pink & purple gradient background */
+    background: linear-gradient(135deg, #ff00cc 0%, #333399 100%);
+    /* Animated glowing effect */
+    animation: neonBG 8s ease-in-out infinite alternate;
+}
+
+@keyframes neonBG {
+    0% {
+        background-position: 0% 50%;
+        filter: brightness(1) saturate(1.1);
+    }
+    100% {
+        background-position: 100% 50%;
+        filter: brightness(1.15) saturate(1.4);
+    }
+}
+
+.container {
+    max-width: 500px;
+    margin: 60px auto;
+    background: rgba(30, 30, 40, 0.85); /* Slightly transparent for neon effect */
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(255, 0, 204, 0.25), 
+                0 1.5px 8px 0 rgba(51, 51, 153, 0.13);
+    padding: 36px 26px;
+    text-align: center;
+    backdrop-filter: blur(2px);
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 24px;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 8px #ff00cc, 0 0 16px #333399;
+}
+
+.api-text {
+    min-height: 60px;
+    background: rgba(255, 255, 255, 0.10);
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px 14px;
+    margin-bottom: 22px;
+    font-size: 1.18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 12px #ff00cc99, 0 0 20px #33339966;
+    border: 1.5px solid #ff00cc80;
+    text-shadow: 0 0 6px #ff00cc, 0 0 10px #333399;
+}
+
+button#fetch-btn {
+    background: linear-gradient(90deg, #ff00cc 0%, #333399 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 32px;
+    font-size: 1.08rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 16px #ff00cc80, 0 0 8px #33339960;
+    transition: transform 0.15s, box-shadow 0.15s, filter 0.15s;
+    outline: none;
+    text-shadow: 0 0 6px #fff;
+}
+
+button#fetch-btn:hover, button#fetch-btn:focus {
+    transform: scale(1.07);
+    box-shadow: 0 0 32px #ff00cc, 0 0 16px #333399;
+    filter: brightness(1.2);
+}

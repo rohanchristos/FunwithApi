@@ -1,0 +1,101 @@
+/* style.css */
+
+body {
+    background: linear-gradient(135deg, #f0f4f8 0%, #e2eafc 100%);
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    background: #fff;
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 36px 32px 28px 32px;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(60, 60, 110, 0.10), 0 1.5px 4.5px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#searchInput {
+    padding: 12px 14px;
+    border: 1.5px solid #bfc9d9;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+#searchInput:focus {
+    border-color: #4f8cff;
+    box-shadow: 0 0 0 2px #e2eafc;
+}
+
+#searchButton {
+    padding: 12px 0;
+    background: linear-gradient(90deg, #4f8cff 60%, #6ed0fa 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(79, 140, 255, 0.10);
+}
+
+#searchButton:hover, #searchButton:focus {
+    background: linear-gradient(90deg, #3a6ed8 60%, #4f8cff 100%);
+    box-shadow: 0 4px 16px rgba(79, 140, 255, 0.16);
+}
+
+#result {
+    margin-top: 10px;
+}
+
+.lodaing {
+    color: #4f8cff;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-style: italic;
+    text-align: center;
+}
+
+#universityList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#universityList li {
+    background: #f7faff;
+    margin-bottom: 10px;
+    padding: 14px 16px;
+    border-radius: 7px;
+    box-shadow: 0 1px 4px rgba(79, 140, 255, 0.06);
+    font-size: 1rem;
+    color: #2d3a4a;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+#universityList li:hover {
+    background: #e2eafc;
+    box-shadow: 0 2px 8px rgba(79, 140, 255, 0.09);
+}
+
+@media (max-width: 500px) {
+    .container {
+        max-width: 96vw;
+        padding: 20px 8px 16px 8px;
+    }
+    #searchInput, #searchButton {
+        font-size: 0.97rem;
+    }
+}
