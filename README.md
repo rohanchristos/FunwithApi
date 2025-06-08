@@ -56,8 +56,6 @@ project2-university-search/index.html
 Enjoy!
 No build steps required—just open the HTML file in your browser. 🎉
 
-📁 Folder Structure
-text
 FunwithApi/
 │
 ├── project1-catfact/
@@ -71,6 +69,7 @@ FunwithApi/
 │   ├── api.js
 │
 └── README.md
+
 📝 Usage Guide
 🐾 Cat Fact App
 Open project1-catfact/index.html.
