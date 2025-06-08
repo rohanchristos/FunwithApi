@@ -92,8 +92,7 @@ View the list of universities. 🎓
 Got ideas? Found a bug? PRs and issues are welcome!
 Let’s make these apps even more fun and useful together. 🚀
 
-📄 License
-MIT License. Use, share, and remix freely! 👐
+ Use, share, and remix freely! 👐
 
 🙏 Thanks & Credits
 Cat Fact API
